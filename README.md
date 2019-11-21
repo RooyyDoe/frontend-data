@@ -63,6 +63,7 @@ Ik heb gebruik gemaakt van de deze API:
 
 Dit is de query die ik ga gebruiken om mijn data uit de database te krijgen. Hiermee haal ik een bepaalde categorie op en kijk hoeveel er van deze categorie uit een bepaald continent komt. Ik wil dit doen in sub-categorieen zodat ik meer data kan laten zien. In mijn [wiki](https://github.com/RooyyDoe/frontend-data/wiki) leg ik alles uit over het concept wat hierachter zit.
 
+
 ```
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -88,6 +89,9 @@ SELECT (SAMPLE(?mainCatName)) ?categoryName (COUNT(?category) AS ?categoryAmount
 
 ```
 
+
+Resultaat:
+
 <img width="1333" alt="Schermafdruk 2019-11-21 17 48 28" src="https://user-images.githubusercontent.com/40355914/69358532-4b336880-0c87-11ea-8cc9-df450a04cbf9.png">
 
 </details>
@@ -100,10 +104,10 @@ SELECT (SAMPLE(?mainCatName)) ?categoryName (COUNT(?category) AS ?categoryAmount
 
 ## Credits
 
-* [Help from Thijs Spijker](https://github.com/iSirThijs) - 
+* [Help from Thijs Spijker](https://github.com/iSirThijs) —
 * [Help from Wessel Smit](https://github.com/WesselSmit) — 
 * [Help from Stefan Gerrits](https://github.com/StefanGerrits2) — 
-* [Help from Sjors Eveleens](https://github.com/Choerd) - 
+* [Help from Sjors Eveleens](https://github.com/Choerd) —
 
 # License
 
