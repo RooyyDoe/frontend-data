@@ -1,0 +1,53 @@
+body {
+    background-color: #2C3350;
+    margin: 1em 5em;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+
+body > h1 {
+    margin-bottom: 2em;
+}
+
+.continentButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 1em 4em;
+    border: 2px solid #2C3350;
+    border-radius: 0.3em;
+    -webkit-box-shadow: 1px 1px 9px 3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 9px 3px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 9px 3px rgba(0,0,0,0.4);
+}
+
+button:focus {
+    border: 2px solid black;
+    background-color: gray;
+}
+
+button > p {
+    padding: 0;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+
+.visualizationWrap {
+    margin-top: 2em;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3em;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 1px 1px 9px 3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 1px 9px 3px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 9px 3px rgba(0,0,0,0.4);
+}

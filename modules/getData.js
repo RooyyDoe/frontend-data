@@ -22,7 +22,7 @@ SELECT (SAMPLE(?mainCatName)) ?categoryName (COUNT(?category) AS ?categoryAmount
 } GROUP BY ?categoryName
 `;
 
-export default async function runQuery(){
+export default async function getData(){
 	const response = await fetch(url+'?query='+ encodeURIComponent(query) +'&format=json');
 	const json = await response.json();
 	return json.results.bindings;
