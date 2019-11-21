@@ -42,7 +42,7 @@ In dit project heb ik veel gewerkt met D3. Om mijn proces te zien kunt u klikken
 git clone https://github.com/RooyyDoe/frontend-data.git
 ```
 
-### Usage
+### Gebruik
 
 **Voer de code uit**
 ```
@@ -96,20 +96,20 @@ Resultaat:
 
 </details>
 
-## Sources
+## Bronnen
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/) - I mostly used this site to obtain my sources
 * [D3](https://d3js.org/) - This source I will mostly use for d3 related problems
 * [D3 In Depth](https://www.d3indepth.com/) - This source goes deeper into the D3 possibilities
 * [Remaining Sources](https://github.com/RooyyDoe/functional-programming/wiki/Remaining-Sources) - My remaining sources can be found at this page and I will also add the real sources and not global ones.
 
-## Credits
+## Erkenning
 
 * [Help from Thijs Spijker](https://github.com/iSirThijs) —
 * [Help from Wessel Smit](https://github.com/WesselSmit) — 
 * [Help from Stefan Gerrits](https://github.com/StefanGerrits2) — 
 * [Help from Sjors Eveleens](https://github.com/Choerd) —
 
-# License
+# Licentie
 
 More information over [License](https://help.github.com/en/articles/licensing-a-repository)
 
