@@ -1,16 +1,30 @@
 export default { 
-    cleanData
+	cleanData,
+	structureData
 }
 
 export function cleanData(rawResults) {
 	return rawResults.reduce((cleanResults, rawResult) => {
+		let newObject = {};
 		for(let key in rawResult) {
 			if (rawResult[key].datatype === 'http://www.w3.org/2001/XMLSchema#integer') {
 				let parsed = parseInt(rawResult[key].value, 10);
-				cleanResults.push(parsed);
-			} else cleanResults.push(rawResult[key].value);
+				newObject[key] = parsed;
+			} else newObject[key] = rawResult[key].value;
 		}
+		cleanResults.push(newObject)
 		return cleanResults;	
 	},[]); 
 	
+}
+
+export function structureData(structuringResults) {
+	return structuringResults.map(mainCategory => {
+		let mainLabel = mainCategory['callret-0']
+
+		return {mainCategory : mainCategory['callret-0'],
+				categoryName : mainCategory.categoryName,
+				categoryAmount : mainCategory.categoryAmount
+				}
+	})
 }
