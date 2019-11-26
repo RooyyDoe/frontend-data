@@ -20,9 +20,11 @@ export function cleanData(rawResults) {
 
 export function structureData(structuringResults) {
 	return structuringResults.map(mainCategory => {
-		let mainLabel = mainCategory['callret-0']
+		console.log(mainCategory)
+		let mainLabel = mainCategory['mainCatName']
+		
 
-		return {mainCategory : mainCategory['callret-0'],
+		return {mainCategory : mainLabel,
 				categoryName : mainCategory.categoryName,
 				categoryAmount : mainCategory.categoryAmount
 				}
