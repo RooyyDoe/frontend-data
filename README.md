@@ -49,7 +49,7 @@ git clone https://github.com/RooyyDoe/frontend-data.git
 Run the index.html into your browser
 ```
 
-**Demo** is beschikbaar op: **still loading..**
+**Demo** is beschikbaar op: https://rooyydoe.github.io/frontend-data/
 
 ### API
 
