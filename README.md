@@ -31,9 +31,9 @@ In dit project heb ik veel gewerkt met D3. Om mijn proces te zien kunt u klikken
 
 ## Interactions
 - [ ] Gebruiker krijgt de mogelijkheid om te **hoveren** over de cirkels en deze word dan gehighlight door alle andere cirkels weg te duwen.
-- [ ] Gebruiker krijgt de mogelijkheid om te **hoveren** over de cirkels en deze word dan gehighlight door als enige cirkel geen donkere transparantie laag eroverheen te hebben.
-- [ ] Gebruiker krijgt de mogelijkheid om te **filteren** doormiddel van een continent te kiezen en welke categorie hierin gedisplayed moet worden.
-- [ ] Gebruiker krijgt de mogelijkheid om te **vergelijkingen** te maken tussen verschillende categorieen met een hoofd doel.
+- [x] Gebruiker krijgt de mogelijkheid om te **hoveren** over de cirkels en dan komt er een tooltip naar voren om extra informatie te geven over de cirkel.
+- [x] Gebruiker krijgt de mogelijkheid om te **filteren** doormiddel van een continent te kiezen en welke categorie hierin gedisplayed moet worden.
+- [x] Gebruiker krijgt de mogelijkheid om te **vergelijkingen** te maken tussen verschillende categorieen met een hoofd doel.
 
 ## Installatie
 
@@ -61,10 +61,10 @@ Ik heb gebruik gemaakt van de deze API:
 
 <details>
 
-Dit is de query die ik ga gebruiken om mijn data uit de database te krijgen. Hiermee haal ik een bepaalde categorie op en kijk hoeveel er van deze categorie uit een bepaald continent komt. Ik wil dit doen in sub-categorieen zodat ik meer data kan laten zien. In mijn [wiki](https://github.com/RooyyDoe/frontend-data/wiki) leg ik alles uit over het concept wat hierachter zit.
+Als concept wil ik de object aantallen uit verschillende categorieën halen en deze moeten kunnen worden geselecteerd op de verschillende continenten die er zijn. In mijn query maak ik gebruik van de termmasters van de verschillende continenten. In de database zitten acht continenten met hierin verschillende objecten. Drie van deze continenten zijn groot in de minderheid als het aankomt op aantal objecten deze wil ik dan automatisch buiten mijn concept gooien. Naast de continenten heb ik drie hoofd categorieën geselecteerd en hiervan de sub-categorieën gebruikt in mijn query. In mijn [wiki](https://github.com/RooyyDoe/frontend-data/wiki) leg ik alles uit over het concept wat hierachter zit.
 
 
-```
+```javascript
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -76,13 +76,13 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 SELECT (SAMPLE(?mainCatName)) ?categoryName (COUNT(?category) AS ?categoryAmount) WHERE {
   
        <https://hdl.handle.net/20.500.11840/termmaster8401> skos:narrower* ?continent .
-  	   ?obj dct:spatial ?continent .
+       ?obj dct:spatial ?continent .
   
-	   <https://hdl.handle.net/20.500.11840/termmaster2704> skos:* ?mainCat .
+       <https://hdl.handle.net/20.500.11840/termmaster2704> skos:* ?mainCat .
        ?mainCat skos:narrower ?category .
        ?mainCat skos:prefLabel ?mainCatName .
        ?obj edm:isRelatedTo ?category .
-  	   ?category skos:prefLabel ?categoryName .
+       ?category skos:prefLabel ?categoryName .
   	   
 } GROUP BY ?categoryName
 
@@ -92,7 +92,7 @@ SELECT (SAMPLE(?mainCatName)) ?categoryName (COUNT(?category) AS ?categoryAmount
 
 Resultaat:
 
-<img width="1333" alt="Schermafdruk 2019-11-21 17 48 28" src="https://user-images.githubusercontent.com/40355914/69358532-4b336880-0c87-11ea-8cc9-df450a04cbf9.png">
+<img width="1331" alt="Schermafdruk 2019-11-24 14 13 32" src="https://user-images.githubusercontent.com/40355914/69495208-a1411f80-0ec4-11ea-8a64-8cdec7f93ac3.png">
 
 </details>
 
@@ -100,14 +100,14 @@ Resultaat:
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/) - I mostly used this site to obtain my sources
 * [D3](https://d3js.org/) - This source I will mostly use for d3 related problems
 * [D3 In Depth](https://www.d3indepth.com/) - This source goes deeper into the D3 possibilities
-* [Remaining Sources](https://github.com/RooyyDoe/functional-programming/wiki/Remaining-Sources) - My remaining sources can be found at this page and I will also add the real sources and not global ones.
+* [Remaining Sources](https://github.com/RooyyDoe/frontend-data/wiki/Overige-bronnen) - My remaining sources can be found at this page and I will also add the real sources and not global ones.
 
 ## Erkenning
 
-* [Help from Thijs Spijker](https://github.com/iSirThijs) —
-* [Help from Wessel Smit](https://github.com/WesselSmit) — 
-* [Help from Stefan Gerrits](https://github.com/StefanGerrits2) — 
-* [Help from Sjors Eveleens](https://github.com/Choerd) —
+* [Help from Thijs Spijker](https://github.com/iSirThijs)
+* [Help from Wessel Smit](https://github.com/WesselSmit)
+* [Help from Stefan Gerrits](https://github.com/StefanGerrits2) 
+* [Help from Sjors Eveleens](https://github.com/Choerd)
 
 # Licentie
 
