@@ -110,6 +110,9 @@ export default function createCircles(data) {
         .style('color', d => {
             return color(d);
         })
+        .style('border-color', d => {
+            return color(d);
+        })
         .attr('for', d => {
             return d;
         })
