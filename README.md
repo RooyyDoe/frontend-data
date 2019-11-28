@@ -21,7 +21,7 @@ Het hele proces van het maken van deze applicatie wordt allemaal gedocumenteerd 
     - [API](#api)
   - [Bronnen](#bronnen)
   - [Erkenning](#erkenning)
-- [License](#license)
+- [Licentie](#licentie)
 
 ## Opdracht
 
@@ -97,20 +97,21 @@ Resultaat:
 </details>
 
 ## Bronnen
-* [Mozilla Developer Network](https://developer.mozilla.org/en-US/) - I mostly used this site to obtain my sources
-* [D3](https://d3js.org/) - This source I will mostly use for d3 related problems
-* [D3 In Depth](https://www.d3indepth.com/) - This source goes deeper into the D3 possibilities
-* [Remaining Sources](https://github.com/RooyyDoe/frontend-data/wiki/Overige-bronnen) - My remaining sources can be found at this page and I will also add the real sources and not global ones.
+* [Mozilla Developer Network](https://developer.mozilla.org/en-US/) - Ik heb deze website voornamelijk gebruikt als ik niet wist met javascript
+* [D3](https://d3js.org/) - Deze bron heb ik meestal gebruikt voor d3-gerelateerde problemen
+* [D3 In Depth](https://www.d3indepth.com/) - Deze bron gaat dieper in op de D3-mogelijkheden
+* [Remaining Sources](https://github.com/RooyyDoe/frontend-data/wiki/Overige-bronnen) - Mijn overige bronnen zijn te vinden op deze pagina.
+
 
 ## Erkenning
 
-* [Help from Thijs Spijker](https://github.com/iSirThijs)
-* [Help from Wessel Smit](https://github.com/WesselSmit)
-* [Help from Stefan Gerrits](https://github.com/StefanGerrits2) 
-* [Help from Sjors Eveleens](https://github.com/Choerd)
+* [Hulp van Thijs Spijker](https://github.com/iSirThijs)
+* [Hulp van Wessel Smit](https://github.com/WesselSmit)
+* [Hulp van Stefan Gerrits](https://github.com/StefanGerrits2) 
+* [Hulp van Sjors Eveleens](https://github.com/Choerd)
 
 # Licentie
 
-More information over [License](https://help.github.com/en/articles/licensing-a-repository)
+Meer informatie over [License](https://help.github.com/en/articles/licensing-a-repository)
 
 [MIT](https://github.com/RooyyDoe/frontend-data/blob/master/LICENSE.txt) © [Roy Kuijper](https://github.com/RooyyDoe)
