@@ -15,12 +15,12 @@ Het hele proces van het maken van deze applicatie wordt allemaal gedocumenteerd 
 - [Frontend Data](#frontend-data)
   - [Screenshots](#screenshots)
   - [Opdracht](#opdracht)
-  - [Interaction](#interaction)
-  - [Installation](#installation)
-    - [Usage](#usage)
+  - [Interacties](#interacties)
+  - [Installatie](#installatie)
+    - [Gebruik](#gebruik)
     - [API](#api)
-  - [Sources](#sources)
-  - [Credits](#credits)
+  - [Bronnen](#bronnen)
+  - [Erkenning](#erkenning)
 - [License](#license)
 
 ## Opdracht
@@ -29,7 +29,7 @@ Maak een datavisualisatie (met behulp van de d3-bibliotheek) op basis van gegeve
 
 In dit project heb ik veel gewerkt met D3. Om mijn proces te zien kunt u klikken op de volgende [link](https://github.com/RooyyDoe/frontend-data/wiki/D3-code-breakdown)
 
-## Interactions
+## Interacties
 - [ ] Gebruiker krijgt de mogelijkheid om te **hoveren** over de cirkels en deze word dan gehighlight door alle andere cirkels weg te duwen.
 - [x] Gebruiker krijgt de mogelijkheid om te **hoveren** over de cirkels en dan komt er een tooltip naar voren om extra informatie te geven over de cirkel.
 - [x] Gebruiker krijgt de mogelijkheid om te **filteren** doormiddel van een continent te kiezen en welke categorie hierin gedisplayed moet worden.
