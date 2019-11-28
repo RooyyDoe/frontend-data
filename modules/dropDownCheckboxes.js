@@ -3,7 +3,6 @@ $('.select-choose__link').click(function() {
     $(this).next('.select-choose__list').slideToggle('fast');
     return false;
   });
-
   // $('.select-choose__item input[type=checkbox]').each(function() {
   //   // value of clicked checkbox
   //   var thisVal = $(this).attr('value') + ', ';
